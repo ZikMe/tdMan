@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  entity_type: MyString
+  tag_type: MyString
+  structure: false
+  subjective: false
+  unique: false
+  tag_type_range_id: 1
+  tag_target: 1
+  virtual: false
+  virtual_target: 1
+  dev_status: MyString
+  dev_pertinence: MyString
+  td_version_id: 1
+
+two:
+  name: MyString
+  description: MyString
+  entity_type: MyString
+  tag_type: MyString
+  structure: false
+  subjective: false
+  unique: false
+  tag_type_range_id: 1
+  tag_target: 1
+  virtual: false
+  virtual_target: 1
+  dev_status: MyString
+  dev_pertinence: MyString
+  td_version_id: 1

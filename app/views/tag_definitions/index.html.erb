@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tag Definitions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Entity type</th>
+      <th>Tag type</th>
+      <th>Structure</th>
+      <th>Subjective</th>
+      <th>Unique</th>
+      <th>Tag type range</th>
+      <th>Tag target</th>
+      <th>Virtual</th>
+      <th>Virtual target</th>
+      <th>Dev status</th>
+      <th>Dev pertinence</th>
+      <th>Td version</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tag_definitions.each do |tag_definition| %>
+      <tr>
+        <td><%= tag_definition.name %></td>
+        <td><%= tag_definition.description %></td>
+        <td><%= tag_definition.entity_type %></td>
+        <td><%= tag_definition.tag_type %></td>
+        <td><%= tag_definition.structure %></td>
+        <td><%= tag_definition.subjective %></td>
+        <td><%= tag_definition.unique %></td>
+        <td><%= tag_definition.tag_type_range_id %></td>
+        <td><%= tag_definition.tag_target %></td>
+        <td><%= tag_definition.virtual %></td>
+        <td><%= tag_definition.virtual_target %></td>
+        <td><%= tag_definition.dev_status %></td>
+        <td><%= tag_definition.dev_pertinence %></td>
+        <td><%= tag_definition.td_version_id %></td>
+        <td><%= link_to 'Show', tag_definition %></td>
+        <td><%= link_to 'Edit', edit_tag_definition_path(tag_definition) %></td>
+        <td><%= link_to 'Destroy', tag_definition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tag definition', new_tag_definition_path %>

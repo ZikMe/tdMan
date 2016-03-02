@@ -1,0 +1,73 @@
+<%= form_for(@tag_definition) do |f| %>
+  <% if @tag_definition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tag_definition.errors.count, "error") %> prohibited this tag_definition from being saved:</h2>
+
+      <ul>
+      <% @tag_definition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_type %><br>
+    <%= f.text_field :entity_type %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_type %><br>
+    <%= f.text_field :tag_type %>
+  </div>
+  <div class="field">
+    <%= f.label :structure %><br>
+    <%= f.check_box :structure %>
+  </div>
+  <div class="field">
+    <%= f.label :subjective %><br>
+    <%= f.check_box :subjective %>
+  </div>
+  <div class="field">
+    <%= f.label :unique %><br>
+    <%= f.check_box :unique %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_type_range_id %><br>
+    <%= f.number_field :tag_type_range_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_target %><br>
+    <%= f.number_field :tag_target %>
+  </div>
+  <div class="field">
+    <%= f.label :virtual %><br>
+    <%= f.check_box :virtual %>
+  </div>
+  <div class="field">
+    <%= f.label :virtual_target %><br>
+    <%= f.number_field :virtual_target %>
+  </div>
+  <div class="field">
+    <%= f.label :dev_status %><br>
+    <%= f.text_field :dev_status %>
+  </div>
+  <div class="field">
+    <%= f.label :dev_pertinence %><br>
+    <%= f.text_field :dev_pertinence %>
+  </div>
+  <div class="field">
+    <%= f.label :td_version_id %><br>
+    <%= f.number_field :td_version_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

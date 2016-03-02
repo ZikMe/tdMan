@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tag_definition.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tag_definition.description %>
+</p>
+
+<p>
+  <strong>Entity type:</strong>
+  <%= @tag_definition.entity_type %>
+</p>
+
+<p>
+  <strong>Tag type:</strong>
+  <%= @tag_definition.tag_type %>
+</p>
+
+<p>
+  <strong>Structure:</strong>
+  <%= @tag_definition.structure %>
+</p>
+
+<p>
+  <strong>Subjective:</strong>
+  <%= @tag_definition.subjective %>
+</p>
+
+<p>
+  <strong>Unique:</strong>
+  <%= @tag_definition.unique %>
+</p>
+
+<p>
+  <strong>Tag type range:</strong>
+  <%= @tag_definition.tag_type_range_id %>
+</p>
+
+<p>
+  <strong>Tag target:</strong>
+  <%= @tag_definition.tag_target %>
+</p>
+
+<p>
+  <strong>Virtual:</strong>
+  <%= @tag_definition.virtual %>
+</p>
+
+<p>
+  <strong>Virtual target:</strong>
+  <%= @tag_definition.virtual_target %>
+</p>
+
+<p>
+  <strong>Dev status:</strong>
+  <%= @tag_definition.dev_status %>
+</p>
+
+<p>
+  <strong>Dev pertinence:</strong>
+  <%= @tag_definition.dev_pertinence %>
+</p>
+
+<p>
+  <strong>Td version:</strong>
+  <%= @tag_definition.td_version_id %>
+</p>
+
+<%= link_to 'Edit', edit_tag_definition_path(@tag_definition) %> |
+<%= link_to 'Back', tag_definitions_path %>

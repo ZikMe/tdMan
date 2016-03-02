@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @td_version.name %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @td_version.comment %>
+</p>
+
+<%= link_to 'Edit', edit_td_version_path(@td_version) %> |
+<%= link_to 'Back', td_versions_path %>

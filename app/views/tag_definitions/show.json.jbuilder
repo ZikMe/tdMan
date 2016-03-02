@@ -1,0 +1,1 @@
+json.extract! @tag_definition, :id, :name, :description, :entity_type, :tag_type, :structure, :subjective, :unique, :tag_type_range_id, :tag_target, :virtual, :virtual_target, :dev_status, :dev_pertinence, :td_version_id, :created_at, :updated_at
