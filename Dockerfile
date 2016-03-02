@@ -9,9 +9,9 @@ RUN echo 'gem: --no-document' > /root/.gemrc
 RUN mkdir /tdman
 
 WORKDIR /tmp
-# COPY Gemfile Gemfile
-# COPY Gemfile.lock Gemfile.lock
-# RUN bundle install
+COPY Gemfile Gemfile
+COPY Gemfile.lock Gemfile.lock
+RUN bundle install
 
 ADD . /tdman
 WORKDIR /tdman
