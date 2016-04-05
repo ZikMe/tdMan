@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Comment</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @td_versions.each do |td_version| %>
       <tr>
+        <td><%= td_version.id %></td>
         <td><%= td_version.name %></td>
         <td><%= td_version.comment %></td>
         <td><%= link_to 'Show', td_version %></td>
